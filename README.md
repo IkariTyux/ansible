@@ -4,7 +4,7 @@
 
 # Ansible
 
-This repo contains ansible playbooks and python scripts that can manage an entire PVE instance starting from a blank installation.
+This repo contains ansible playbooks and python scripts that can manage VMs and Containers in a PVE instance starting from a blank installation.
 The use of python makes it usable on every OS.
 
 ## What can be done
@@ -19,4 +19,3 @@ The use of python makes it usable on every OS.
 - Already installed proxmox-ve instance (Version 7 or more)
 - SSH access on the said instance
 - Python and Ansible installed on your machine
-
