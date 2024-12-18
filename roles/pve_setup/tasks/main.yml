@@ -1,0 +1,37 @@
+---
+
+- name: Create ansible user
+  user:
+    name: ansible
+    create_home: yes
+    shell: /bin/bash
+    password: "{{ ansible_password }}"
+
+- name: Create ssh folder
+  file:
+    path: /home/ansible/.ssh
+    state: directory
+    owner: ansible
+    group: ansible
+
+- name: Add SSH Key
+  copy:
+    src: ssh_keys
+    dest: /home/ansible/.ssh/authorized_keys
+    owner: ansible
+    group: ansible
+    mode: '0700'
+
+- name: Enable sshd
+  systemd:
+    name: sshd
+    enabled: yes
+
+- name: Create pool "Default"
+  community.general.proxmox_pool:
+    api_host: "{{ api_host }}"
+    api_user: "{{ api_user }}"
+    api_password: "{{ api_password }}"
+    poolid: Default
+    comment: "Pool for ansible automation"
+    state: present

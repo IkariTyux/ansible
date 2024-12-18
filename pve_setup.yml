@@ -1,0 +1,5 @@
+- name: Setup the proxmox
+  host: pve2
+  become: true
+  roles:
+    - pve_setup
