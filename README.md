@@ -16,6 +16,6 @@ The use of python makes it usable on every OS.
 - Bulk create from CSV file
 
 ## Base Requirements
-- Already installed proxmox-ve instance (Version 7 or more)
-- SSH access on the said instance
+- Already installed proxmox-ve server (Version 7 or more)
+- SSH access on the server
 - Python and Ansible installed on your machine
