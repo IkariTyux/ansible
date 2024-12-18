@@ -18,5 +18,5 @@ The use of python makes it usable on every OS.
 ## Base Requirements
 - Already installed proxmox-ve instance (Version 7 or more)
 - SSH access on the said instance
-- Python and Ansible on your machine
+- Python and Ansible installed on your machine
 
