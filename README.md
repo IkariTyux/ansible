@@ -15,7 +15,8 @@ The use of python makes it usable on every OS.
 - Update the Host
 - Bulk create from CSV file
 
-## Base Requirements
+## Minimal Requirements
 - Already installed proxmox-ve server (Version 7 or more)
 - SSH access on the server
+- Proxmoxer installed on the server (`pip install proxmoxer  --break-system-packages`)
 - Python and Ansible installed on your machine
