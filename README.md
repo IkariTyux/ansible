@@ -2,7 +2,7 @@
 
 ---
 
-# Ansible PVE
+# Ansible
 
 This repo contains ansible playbooks and python scripts that can manage an entire PVE instance starting from a blank installation.
 The use of python makes it usable on every OS.
@@ -13,7 +13,7 @@ The use of python makes it usable on every OS.
 - Start/Stop VM/CT (Force stop included)
 - Sytsem Updates for VM/CT
 - Update the Host
-- Bulk create from CVS
+- Bulk create from CSV file
 
 ## Base Requirements
 - Already installed proxmox-ve instance (Version 7 or more)
